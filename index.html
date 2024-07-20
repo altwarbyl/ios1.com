@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<style>
+.ui-block-a, .ui-block-b, .ui-block-c {
+    background-color: lightgray;
+    border: 1px solid black;
+    height: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <a href="#"  class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">返回</a>
+    <h1>欢迎使用手机PMS</h1>
+    <a href="#revealPanel"  class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-right">主页</a>
+  <div data-role="panel" id="revealPanel" data-display="reveal" data-position="right" data-position-fixed="true" > 
+    <h2>滑出面板</h2>
+    <p>你可以使用按下 Esc 键、点击面板外部区域、通过滑动或点击下面按钮来关闭面板：</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-right">关闭面板</a>
+  </div> 
+  </div>
+   <div data-role="main" class="ui-content">
+    <p>注意我们在头部按钮上添加了  "ui-corner-all" 和 "ui-shadow" 类，使他看起来更美观点。</p>
+  </div>
+    <div class="ui-grid-a">
+      <div class="ui-block-a"><span>空房</span></div>
+      <div class="ui-block-b"><span>在住</span></div>
+    </div>
+    <div class="ui-grid-b">
+      <div class="ui-block-a"><span>空净</span></div>
+      <div class="ui-block-b"><span>空脏</span></div>
+      <div class="ui-block-c"><span>在住净</span></div>
+    </div>
+</div>
+</body>
+</html>
